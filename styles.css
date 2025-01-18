@@ -1,0 +1,134 @@
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #0a192f;
+}
+
+.container {
+    text-align: center;
+    background-color: #112240;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 90%;
+    border: 1px solid rgba(100, 255, 255, 0.1);
+}
+
+h1 {
+    color: #64ffda;
+    font-size: 1.875rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.timer {
+    font-size: 5rem;
+    font-weight: 700;
+    margin: 2rem 0;
+    color: #ffffff;
+    font-variant-numeric: tabular-nums;
+    text-shadow: 0 0 25px rgba(100, 255, 218, 0.3);
+}
+
+.controls button {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    background-color: #64ffda;
+    color: #0a192f;
+    border: none;
+    border-radius: 12px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.controls button:hover {
+    background-color: #72ffdf;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(100, 255, 218, 0.3);
+}
+
+#reset {
+    background-color: #ef4444;
+    color: white;
+}
+
+#reset:hover {
+    background-color: #f87171;
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.5);
+}
+
+#toggle-mode {
+    font-size: 0.875rem;
+    margin: 1.5rem 0;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    background-color: #1d4ed8;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+#toggle-mode:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.mode {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    color: #8892b0;
+    font-weight: 500;
+}
+
+.task-input {
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.task-input input {
+    flex: 1;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid rgba(100, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    font-family: inherit;
+}
+
+.task-input input:focus {
+    outline: none;
+    border-color: #64ffda;
+}
+
+.task-input button {
+    padding: 0.75rem 1.5rem;
+    background-color: #64ffda;
+    color: #0a192f;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.task-input button:hover {
+    background-color: #72ffdf;
+    transform: translateY(-2px);
+}
+
+.current-task {
+    color: #64ffda;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    min-height: 1.5rem;
+} 
