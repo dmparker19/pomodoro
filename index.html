@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pomodoro Timer</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSIxNCIgc3Ryb2tlPSIjNjRmZmRhIiBzdHJva2Utd2lkdGg9IjIiLz48cGF0aCBkPSJNMTYgOHY4bDQgNCIgc3Ryb2tlPSIjNjRmZmRhIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjwvc3ZnPg==">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -28,6 +29,33 @@
         </div>
         <div class="mode">
             <span id="mode-text">Work Time</span>
+        </div>
+        <div class="settings">
+            <h2>Sound Settings</h2>
+            <div class="sound-controls">
+                <div class="volume-control">
+                    <label for="volume">Volume:</label>
+                    <input type="range" id="volume" min="0" max="100" value="50">
+                    <span id="volume-value">50%</span>
+                </div>
+                <div class="sound-select">
+                    <label for="work-sound">Work End Sound:</label>
+                    <select id="work-sound">
+                        <option value="beep">Beep</option>
+                        <option value="bell">Bell</option>
+                        <option value="chime">Chime</option>
+                    </select>
+                </div>
+                <div class="sound-select">
+                    <label for="break-sound">Break End Sound:</label>
+                    <select id="break-sound">
+                        <option value="bell">Bell</option>
+                        <option value="beep">Beep</option>
+                        <option value="chime">Chime</option>
+                    </select>
+                </div>
+                <button id="test-sound">Test Sounds</button>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
